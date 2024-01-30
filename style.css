@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#pokemonImg{
+   height: 200px;
+}
+
+#pok1{
+    background-color: green;
+}
+
+#pok2{
+    background-color: blue;
+}
+
+#pok3{
+    background-color: orangered;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.pokemons{
+    width: 280px;
+    height: 360px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    padding: 15px;
+}
+
+#evo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.evolution {
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (width >= 360px) {
+    .all-pokemons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .pokemons{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (width < 1000px){
+    .evolution{
+        display: none;
+    }
+}
+
